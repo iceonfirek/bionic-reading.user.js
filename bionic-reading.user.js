@@ -20,7 +20,7 @@
 const defaultConfig = {
     key: 'b',
     autoBionic: true,
-    skipLinks: false,
+    skipLinks: true,
     skipWords: false,
     scale: 0.5,
     maxBionicLength: null,
@@ -126,22 +126,7 @@ const gather = el=>{
 
 const engRegex  = /[a-zA-Z][a-z]+/;
 const engRegexg = new RegExp(engRegex,'g');
-const getHalfLength = word=>{
-
-    let halfLength;
-    if(/ing$/.test(word)){
-        halfLength = word.length - 3;
-    }else if(word.length<5){
-        halfLength = Math.floor(word.length * config.scale);
-    }else{
-        halfLength = Math.ceil(word.length * config.scale);
-    }
-
-    if(config.maxBionicLength){
-        halfLength = Math.min(halfLength, config.maxBionicLength)
-    }
-    return halfLength;
-}
+const getHalfLength = 3
 
 
 let count = 0;
