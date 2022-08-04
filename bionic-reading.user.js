@@ -126,7 +126,11 @@ const gather = el=>{
 
 const engRegex  = /[a-zA-Z][a-z]+/;
 const engRegexg = new RegExp(engRegex,'g');
-const getHalfLength = 3
+const getHalfLength = word=>{
+
+    let halfLength = 3            // 固定加黑长度为3
+    return halfLength;
+}
 
 
 let count = 0;
