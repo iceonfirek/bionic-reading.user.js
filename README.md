@@ -1,3 +1,7 @@
+# 版本不同
+不是按照原版的加粗50%，而是灰掉前三个字母之后的
+keep first 3 letters, and grey others
+
 # 网页英文前部加粗 用户脚本
 把英文每个词前半部加粗，阅读速度可能可以大幅度提高
 
@@ -61,5 +65,3 @@ https://github.com/itorr/bionic-reading.user.js
 
 Chrome Extension [@ivan-robic/bionic-reading](https://github.com/ivan-robic/bionic-reading)
 
-## 微博
-https://weibo.com/1197780522/LtIj8bGbo
